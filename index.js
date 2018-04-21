@@ -8,3 +8,6 @@ function deleteFromObjectByKey(object, key){
   Object.assign(newObj, object)
   delete newObj[key]
   return newObj}
+function destructivelyDeleteFromObjectByKey(object, key){
+  delete object[key]
+  return object}
